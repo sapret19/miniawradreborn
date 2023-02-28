@@ -57,8 +57,8 @@ class _bodyState extends State<body> {
                   child: Row(
                     children: [
                       Container(
-                        height: 7.h,
-                        width: 12.w,
+                        height: 62,
+                        width: 62,
                         margin: EdgeInsets.only(left: 15),
                         decoration: const BoxDecoration(
                           color: Colors.white,
@@ -136,6 +136,11 @@ class _bodyState extends State<body> {
                       height: 100,
                       width: 156,
                       decoration: BoxDecoration(
+                          image: DecorationImage(
+                              alignment: Alignment.bottomRight,
+                              image: ExactAssetImage(
+                                  'assets/images/tawassul.png',
+                                  scale: 0.7)),
                           gradient: LinearGradient(
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
@@ -160,6 +165,10 @@ class _bodyState extends State<body> {
                                 width: 40,
                                 decoration: BoxDecoration(
                                     color: Colors.white,
+                                    image: DecorationImage(
+                                        image: ExactAssetImage(
+                                            'assets/images/tawassul.png',
+                                            scale: 2)),
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15))),
                               ),
@@ -201,6 +210,15 @@ class _bodyState extends State<body> {
                         ],
                       ),
                     ),
+                    // Container(
+                    //   margin: EdgeInsets.only(top: 40),
+                    //   height: 100,
+                    //   width: 156,
+                    //   decoration: const BoxDecoration(
+                    //       image: DecorationImage(
+                    //           image: ExactAssetImage(
+                    //               'assets/images/kotakan.png'))),
+                    // ),
                     SizedBox(
                       width: 30,
                     ),
@@ -210,6 +228,10 @@ class _bodyState extends State<body> {
                       height: 100,
                       width: 156,
                       decoration: BoxDecoration(
+                          image: DecorationImage(
+                              alignment: Alignment.bottomRight,
+                              image: ExactAssetImage('assets/images/birrul.png',
+                                  scale: 0.7)),
                           gradient: LinearGradient(
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
@@ -229,9 +251,13 @@ class _bodyState extends State<body> {
                                 margin: EdgeInsets.fromLTRB(10, 13, 45, 0),
                                 // EdgeInsets.only(left: 20, top: 15, right: 30),
                                 height: 40,
-                                width: 40,
+                                width: 50,
                                 decoration: BoxDecoration(
                                     color: Colors.white,
+                                    image: DecorationImage(
+                                        image: ExactAssetImage(
+                                      'assets/images/birrul.png',
+                                    )),
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15))),
                               ),
@@ -286,6 +312,10 @@ class _bodyState extends State<body> {
                       height: 100,
                       width: 156,
                       decoration: BoxDecoration(
+                          image: DecorationImage(
+                              alignment: Alignment.bottomRight,
+                              image: ExactAssetImage('assets/images/yasin.png',
+                                  scale: 1.2)),
                           gradient: LinearGradient(
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
@@ -309,6 +339,10 @@ class _bodyState extends State<body> {
                                 height: 40,
                                 width: 40,
                                 decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: ExactAssetImage(
+                                            'assets/images/yasin.png',
+                                            scale: 3)),
                                     color: Colors.white,
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15))),
@@ -360,6 +394,11 @@ class _bodyState extends State<body> {
                       height: 100,
                       width: 156,
                       decoration: BoxDecoration(
+                          image: DecorationImage(
+                              alignment: Alignment.bottomRight,
+                              image: ExactAssetImage(
+                                  'assets/images/istighosah.png',
+                                  scale: 1.4)),
                           gradient: LinearGradient(
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
@@ -383,6 +422,10 @@ class _bodyState extends State<body> {
                                 height: 40,
                                 width: 40,
                                 decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: ExactAssetImage(
+                                            'assets/images/istighosah.png',
+                                            scale: 4)),
                                     color: Colors.white,
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15))),
@@ -441,6 +484,10 @@ class _bodyState extends State<body> {
                       height: 100,
                       width: 156,
                       decoration: BoxDecoration(
+                          image: DecorationImage(
+                              alignment: Alignment.bottomRight,
+                              image: ExactAssetImage('assets/images/waqiah.png',
+                                  scale: 2.7)),
                           gradient: LinearGradient(
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
@@ -464,6 +511,10 @@ class _bodyState extends State<body> {
                                 height: 40,
                                 width: 40,
                                 decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: ExactAssetImage(
+                                            'assets/images/waqiah.png',
+                                            scale: 7)),
                                     color: Colors.white,
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15))),
@@ -515,6 +566,10 @@ class _bodyState extends State<body> {
                       height: 100,
                       width: 156,
                       decoration: BoxDecoration(
+                          image: DecorationImage(
+                              alignment: Alignment.bottomRight,
+                              image: ExactAssetImage('assets/images/burdah.png',
+                                  scale: 1.2)),
                           gradient: LinearGradient(
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
@@ -538,6 +593,10 @@ class _bodyState extends State<body> {
                                 height: 40,
                                 width: 40,
                                 decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: ExactAssetImage(
+                                            'assets/images/burdah.png',
+                                            scale: 3)),
                                     color: Colors.white,
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15))),
@@ -592,10 +651,13 @@ class _bodyState extends State<body> {
                   children: [
                     // Diba
                     Container(
-                      // margin: EdgeInsets.only(top: 40),
                       height: 100,
                       width: 156,
                       decoration: BoxDecoration(
+                          image: DecorationImage(
+                              alignment: Alignment.bottomRight,
+                              image: ExactAssetImage('assets/images/diba.png',
+                                  scale: 1.4)),
                           gradient: LinearGradient(
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
@@ -619,6 +681,10 @@ class _bodyState extends State<body> {
                                 height: 40,
                                 width: 40,
                                 decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: ExactAssetImage(
+                                            'assets/images/diba.png',
+                                            scale: 3)),
                                     color: Colors.white,
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15))),
@@ -670,6 +736,10 @@ class _bodyState extends State<body> {
                       height: 100,
                       width: 156,
                       decoration: BoxDecoration(
+                          image: DecorationImage(
+                              alignment: Alignment.bottomRight,
+                              image: ExactAssetImage('assets/images/sabul.png',
+                                  scale: 0.3)),
                           gradient: LinearGradient(
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
@@ -693,6 +763,10 @@ class _bodyState extends State<body> {
                                 height: 40,
                                 width: 40,
                                 decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: ExactAssetImage(
+                                            'assets/images/sabul.png',
+                                            scale: 0.9)),
                                     color: Colors.white,
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15))),
@@ -751,6 +825,10 @@ class _bodyState extends State<body> {
                       height: 100,
                       width: 156,
                       decoration: BoxDecoration(
+                          image: DecorationImage(
+                              alignment: Alignment.bottomRight,
+                              image: ExactAssetImage('assets/images/dalail.png',
+                                  scale: 2.3)),
                           gradient: LinearGradient(
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
@@ -774,6 +852,10 @@ class _bodyState extends State<body> {
                                 height: 40,
                                 width: 40,
                                 decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: ExactAssetImage(
+                                            'assets/images/dalail.png',
+                                            scale: 6)),
                                     color: Colors.white,
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15))),
@@ -825,6 +907,10 @@ class _bodyState extends State<body> {
                       height: 100,
                       width: 156,
                       decoration: BoxDecoration(
+                          image: DecorationImage(
+                              alignment: Alignment.bottomRight,
+                              image: ExactAssetImage('assets/images/kitab.png',
+                                  scale: 1.3)),
                           gradient: LinearGradient(
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
@@ -848,6 +934,10 @@ class _bodyState extends State<body> {
                                 height: 40,
                                 width: 40,
                                 decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                        image: ExactAssetImage(
+                                            'assets/images/kitab.png',
+                                            scale: 3)),
                                     color: Colors.white,
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15))),
