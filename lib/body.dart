@@ -35,10 +35,8 @@ class _bodyState extends State<body> {
                   height: 20,
                 ),
                 Container(
-                  height: 11.h,
-                  width: 60.w,
-                  // height: 20.h,
-                  // width: 60.h,
+                  height: 97,
+                  width: 282,
                   // color:  Color.fromARGB(255, 84, 181, 246),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -87,7 +85,7 @@ class _bodyState extends State<body> {
                               color: Colors.white,
                               fontFamily: 'Poppins',
                               fontWeight: FontWeight.w400,
-                              fontSize: 8.sp,
+                              fontSize: 12,
                             ),
                           ),
                           // SizedBox(height: 13),
@@ -97,7 +95,7 @@ class _bodyState extends State<body> {
                               color: Colors.white,
                               fontFamily: 'Poppins',
                               fontWeight: FontWeight.w600,
-                              fontSize: 9.sp,
+                              fontSize: 14,
                             ),
                           ),
                           Text(
@@ -106,7 +104,7 @@ class _bodyState extends State<body> {
                               color: Colors.white,
                               fontFamily: 'Poppins',
                               fontWeight: FontWeight.w400,
-                              fontSize: 7.sp,
+                              fontSize: 10,
                             ),
                           )
                         ],
