@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miniawradreborn/home.dart';
+import 'package:miniawradreborn/page/page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(),
-      home: const Home(),
+      home: const page(),
       debugShowCheckedModeBanner: false,
-      
     );
   }
 }
-
