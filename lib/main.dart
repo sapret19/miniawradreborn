@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miniawradreborn/home.dart';
+import 'package:miniawradreborn/page/page.dart';
 import 'package:sizer/sizer.dart';
 
 void main() {
