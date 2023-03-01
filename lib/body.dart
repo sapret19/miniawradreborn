@@ -848,7 +848,6 @@ class _bodyState extends State<body> {
                             children: [
                               Container(
                                 margin: EdgeInsets.fromLTRB(10, 13, 45, 0),
-                                // EdgeInsets.only(left: 20, top: 15, right: 30),
                                 height: 40,
                                 width: 40,
                                 decoration: BoxDecoration(
@@ -903,7 +902,6 @@ class _bodyState extends State<body> {
                     ),
                     // Kitab-kitab
                     Container(
-                      // margin: EdgeInsets.only(top: 40),
                       height: 100,
                       width: 156,
                       decoration: BoxDecoration(
