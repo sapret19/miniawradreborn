@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:get/get.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class page extends StatefulWidget {
@@ -78,7 +79,7 @@ class AppBar_normalpage extends StatelessWidget {
           //Back Button
           GestureDetector(
             onTap: () {
-              Navigator.pop(context);
+              Get.back();
             },
             child: Container(
               margin: EdgeInsets.fromLTRB(17, 25, 0, 17),
