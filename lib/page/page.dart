@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:miniawradreborn/page/appbar_page.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class page extends StatefulWidget {
@@ -17,7 +18,7 @@ class _pageState extends State<page> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            AppBar_normalpage(),
+            AppBar_normalpage(judul: 'Tawassul',),
             SizedBox(
               height: 30,
             ),
@@ -40,79 +41,3 @@ class _pageState extends State<page> {
   }
 }
 
-class AppBar_normalpage extends StatelessWidget {
-  const AppBar_normalpage({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      height: 130,
-      decoration: BoxDecoration(
-        boxShadow: [
-          BoxShadow(
-              color: Color.fromARGB(255, 39, 110, 176),
-              spreadRadius: 1,
-              offset: Offset(0, 0),
-              blurRadius: 10)
-        ],
-        image: DecorationImage(
-            image: ExactAssetImage('assets/images/gerbangdrone.jpg'),
-            fit: BoxFit.fitWidth,
-            opacity: 230),
-        borderRadius: BorderRadius.only(bottomLeft: Radius.circular(35)),
-        gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              Color.fromARGB(255, 84, 181, 246),
-              Color.fromARGB(255, 39, 110, 176),
-            ]),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          //Back Button
-          GestureDetector(
-            onTap: () {
-              Navigator.pop(context);
-            },
-            child: Container(
-              margin: EdgeInsets.fromLTRB(17, 25, 0, 17),
-              width: 40,
-              height: 40,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                boxShadow: [
-                  BoxShadow(
-                      color: Color.fromARGB(255, 39, 110, 176),
-                      spreadRadius: 0,
-                      offset: Offset(0, 0),
-                      blurRadius: 6)
-                ],
-                borderRadius: BorderRadius.all(Radius.circular(10)),
-                image: DecorationImage(
-                    image: AssetImage('assets/images/back.png')),
-              ),
-            ),
-          ),
-          //Judul
-          Container(
-            margin: EdgeInsets.only(left: 17),
-            child: Text(
-              'Tawassul',
-              style: TextStyle(
-                  fontFamily: 'Poppins',
-                  fontSize: 18,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.white),
-            ),
-          )
-        ],
-      ),
-    );
-  }
-}
