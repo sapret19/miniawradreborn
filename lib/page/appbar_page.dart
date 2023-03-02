@@ -4,14 +4,15 @@ import 'package:flutter/material.dart';
 class AppBar_normalpage extends StatelessWidget {
   final String judul;
   const AppBar_normalpage({
-    super.key, required this.judul,
+    super.key,
+    required this.judul,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: 130,
+      height: 140,
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
@@ -43,7 +44,7 @@ class AppBar_normalpage extends StatelessWidget {
               Navigator.pop(context);
             },
             child: Container(
-              margin: EdgeInsets.fromLTRB(17, 25, 0, 17),
+              margin: EdgeInsets.fromLTRB(17, 35, 0, 17),
               width: 40,
               height: 40,
               decoration: BoxDecoration(

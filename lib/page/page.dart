@@ -22,9 +22,9 @@ class page extends StatelessWidget {
             AppBar_normalpage(
               judul: '${judulpage}',
             ),
-            SizedBox(
-              height: 30,
-            ),
+            // SizedBox(
+            //   height: 30,
+            // ),
             Container(
               decoration:
                   BoxDecoration(color: Color.fromARGB(255, 251, 251, 251)),

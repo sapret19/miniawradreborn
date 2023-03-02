@@ -21,7 +21,7 @@ class _Tabbar_pageState extends State<Tabbar_page> {
             children: [
               Container(
                 width: MediaQuery.of(context).size.width,
-                height: 150,
+                height: 160,
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
@@ -54,7 +54,7 @@ class _Tabbar_pageState extends State<Tabbar_page> {
                         Navigator.pop(context);
                       },
                       child: Container(
-                        margin: EdgeInsets.fromLTRB(17, 25, 0, 17),
+                        margin: EdgeInsets.fromLTRB(17, 35, 0, 17),
                         width: 40,
                         height: 40,
                         decoration: BoxDecoration(
