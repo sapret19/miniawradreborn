@@ -8,14 +8,10 @@ import 'package:miniawradreborn/page/appbar_page.dart';
 
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
-class page extends StatefulWidget {
-  const page({super.key});
+class page extends StatelessWidget {
+  final String judulpage;
+   page({super.key, required this.judulpage});
 
-  @override
-  State<page> createState() => _pageState();
-}
-
-class _pageState extends State<page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +19,7 @@ class _pageState extends State<page> {
         child: Column(
           children: [
             AppBar_normalpage(
-              judul: 'Tawassul',
+              judul: '${judulpage}',
             ),
             SizedBox(
               height: 30,
