@@ -10,7 +10,8 @@ import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class page extends StatelessWidget {
   final String judulpage;
-   page({super.key, required this.judulpage});
+  final String pdfpage;
+  page({super.key, required this.judulpage, required this.pdfpage});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +31,7 @@ class page extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
               child: SfPdfViewer.asset(
-                'assets/pdf/coba.pdf',
+                'assets/pdf/${pdfpage}',
                 enableDoubleTapZooming: true,
                 pageSpacing: 0,
                 initialZoomLevel: 0,

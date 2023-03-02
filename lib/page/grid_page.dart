@@ -27,17 +27,17 @@ class _grid_pageState extends State<grid_page> {
               child: Column(
                 children: [
                   input_kitab(
-                      page_kitab_kiri: page(judulpage: 'Badrun Bada'),
+                      page_kitab_kiri: page(judulpage: 'Badrun Bada', pdfpage: 'coba.pdf'),
                       cover_kitab_kiri: '1.jpg',
                       nama_kitab_kiri: 'Badrun Bada',
-                      page_kitab_kanan: page(judulpage: 'judulpage'),
+                      page_kitab_kanan: page(judulpage: 'Sembarang', pdfpage: 'coba.pdf'),
                       cover_kitab_kanan: '1.jpg',
                       nama_kitab_kanan: 'Pokok kitab'),
                   input_kitab(
-                      page_kitab_kiri: page(judulpage: 'Badrun Bada'),
+                      page_kitab_kiri: page(judulpage: 'Badrun Bada', pdfpage: 'coba.pdf'),
                       cover_kitab_kiri: '1.jpg',
                       nama_kitab_kiri: 'Badrun Bada',
-                      page_kitab_kanan: page(judulpage: 'judulpage'),
+                      page_kitab_kanan: page(judulpage: 'pokok', pdfpage: 'coba.pdf'),
                       cover_kitab_kanan: '1.jpg',
                       nama_kitab_kanan: 'Pokok kitab')
                 ],
