@@ -3,19 +3,19 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
-class Tabbar_page extends StatefulWidget {
-  const Tabbar_page({super.key});
+class Tabbar_waqiah extends StatefulWidget {
+  const Tabbar_waqiah({super.key});
 
   @override
-  State<Tabbar_page> createState() => _Tabbar_pageState();
+  State<Tabbar_waqiah> createState() => _Tabbar_pageState();
 }
 
-class _Tabbar_pageState extends State<Tabbar_page> {
+class _Tabbar_pageState extends State<Tabbar_waqiah> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: DefaultTabController(
-        length: 3,
+        length: 2,
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -76,7 +76,7 @@ class _Tabbar_pageState extends State<Tabbar_page> {
                     Container(
                       margin: EdgeInsets.only(left: 17),
                       child: Text(
-                        'Yasin & Tahlil',
+                        'Al-Waqiah',
                         style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 18,
@@ -112,8 +112,7 @@ class _Tabbar_pageState extends State<Tabbar_page> {
                               color: Color.fromARGB(255, 194, 194, 194))
                         ]),
                     tabs: [
-                      nama_tab(namatab: 'Yasin'),
-                      nama_tab(namatab: 'Tahlil'),
+                      nama_tab(namatab: 'Al-Waqiah'),
                       nama_tab(namatab: 'Doa'),
                     ]),
               ),
@@ -121,7 +120,6 @@ class _Tabbar_pageState extends State<Tabbar_page> {
                 height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
                 child: TabBarView(children: [
-                  page_tab(pagetab: 'coba.pdf'),
                   page_tab(pagetab: 'coba.pdf'),
                   page_tab(pagetab: 'coba.pdf'),
                 ]),
