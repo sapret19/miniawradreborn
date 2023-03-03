@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
+import 'package:miniawradreborn/page/grid_page.dart';
 import 'package:miniawradreborn/page/page.dart';
 import 'package:sizer/sizer.dart';
 import 'package:get/get.dart';
@@ -912,81 +913,85 @@ class _bodyState extends State<body> {
                       width: 30,
                     ),
                     // Kitab-kitab
-                    Container(
-                      height: 100,
-                      width: 156,
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                              alignment: Alignment.bottomRight,
-                              image: ExactAssetImage('assets/images/kitab.png',
-                                  scale: 1.3)),
-                          gradient: LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              colors: [
-                                Color.fromARGB(255, 84, 181, 246),
-                                Color.fromARGB(255, 39, 110, 176),
-                              ]),
-                          borderRadius:
-                              BorderRadiusDirectional.all(Radius.circular(18))),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Container(
-                                margin: EdgeInsets.fromLTRB(10, 13, 45, 0),
-                                // EdgeInsets.only(left: 20, top: 15, right: 30),
-                                height: 40,
-                                width: 40,
-                                decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                        image: ExactAssetImage(
-                                            'assets/images/kitab.png',
-                                            scale: 3)),
-                                    color: Colors.white,
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(15))),
-                              ),
-                              SizedBox(
-                                height: 15,
-                              ),
-                              Container(
-                                margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
-                                child: Text(
-                                  'Kitab-kitab',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: 'Poppins',
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 10,
-                                  ),
+                    GestureDetector(
+                      onTap: () => Get.to(grid_page()),
+                      child: Container(
+                        height: 100,
+                        width: 156,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                alignment: Alignment.bottomRight,
+                                image: ExactAssetImage(
+                                    'assets/images/kitab.png',
+                                    scale: 1.3)),
+                            gradient: LinearGradient(
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight,
+                                colors: [
+                                  Color.fromARGB(255, 84, 181, 246),
+                                  Color.fromARGB(255, 39, 110, 176),
+                                ]),
+                            borderRadius: BorderRadiusDirectional.all(
+                                Radius.circular(18))),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  margin: EdgeInsets.fromLTRB(10, 13, 45, 0),
+                                  // EdgeInsets.only(left: 20, top: 15, right: 30),
+                                  height: 40,
+                                  width: 40,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: ExactAssetImage(
+                                              'assets/images/kitab.png',
+                                              scale: 3)),
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(15))),
                                 ),
-                              )
-                            ],
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(19, 20, 0, 0),
-                            width: 8,
-                            height: 8,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(4),
-                              color: Colors.white,
+                                SizedBox(
+                                  height: 15,
+                                ),
+                                Container(
+                                  margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                  child: Text(
+                                    'Kitab-kitab',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 10,
+                                    ),
+                                  ),
+                                )
+                              ],
                             ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.fromLTRB(10, 20, 0, 0),
-                            width: 8,
-                            height: 8,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(4),
-                              color: Colors.white,
+                            Container(
+                              margin: EdgeInsets.fromLTRB(19, 20, 0, 0),
+                              width: 8,
+                              height: 8,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(4),
+                                color: Colors.white,
+                              ),
                             ),
-                          ),
-                        ],
+                            Container(
+                              margin: EdgeInsets.fromLTRB(10, 20, 0, 0),
+                              width: 8,
+                              height: 8,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(4),
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ],
