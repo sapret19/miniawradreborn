@@ -136,7 +136,10 @@ class _bodyState extends State<body> {
                     // tawassul
                     GestureDetector(
                       onTap: () {
-                        Get.to(page(judulpage: 'Tawassul',pdfpage: 'coba.pdf',));
+                        Get.to(page(
+                          judulpage: 'Tawassul',
+                          pdfpage: 'coba.pdf',
+                        ));
                       },
                       child: Container(
                         margin: EdgeInsets.only(top: 40),
