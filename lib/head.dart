@@ -1,20 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:sizer/sizer.dart';
 
-class Head extends StatefulWidget {
-  const Head({super.key});
+class head extends StatelessWidget {
+  const head({
+    super.key,
+  });
 
-  @override
-  State<Head> createState() => _HeadState();
-}
-
-class _HeadState extends State<Head> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height / 4,
+      height: 24.h,
+      width: 100.h,
       decoration: BoxDecoration(
         color: Color.fromARGB(255, 84, 181, 246),
         image: DecorationImage(
