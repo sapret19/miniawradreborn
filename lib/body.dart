@@ -5,6 +5,9 @@ import 'package:miniawradreborn/bunder.dart';
 import 'package:miniawradreborn/head.dart';
 import 'package:miniawradreborn/page/grid_page.dart';
 import 'package:miniawradreborn/page/page.dart';
+import 'package:miniawradreborn/page/tabbar_sabul.dart';
+import 'package:miniawradreborn/page/tabbar_waqiah.dart';
+import 'package:miniawradreborn/page/tabbar_yasin.dart';
 import 'package:sizer/sizer.dart';
 
 class body extends StatefulWidget {

@@ -22,19 +22,23 @@ class page extends StatelessWidget {
             AppBar_normalpage(
               judul: '${judulpage}',
             ),
-            SizedBox(
-              height: 30,
-            ),
+            // SizedBox(
+            //   height: 30,
+            // ),
             Container(
               decoration:
                   BoxDecoration(color: Color.fromARGB(255, 251, 251, 251)),
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
-              child: SfPdfViewer.asset(
-                'assets/pdf/${pdfpage}',
-                enableDoubleTapZooming: true,
-                pageSpacing: 0,
-                initialZoomLevel: 0,
+              height: 500,
+              margin: EdgeInsets.all(20),
+              // padding: EdgeInsets.all(20),
+              child: Container(
+                child: SfPdfViewer.asset(
+                  'assets/pdf/${pdfpage}',
+                  enableDoubleTapZooming: true,
+                  pageSpacing: 0,
+                  initialZoomLevel: 0,
+                ),
               ),
             )
           ],
