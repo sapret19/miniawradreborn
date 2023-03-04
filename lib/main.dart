@@ -3,8 +3,12 @@ import 'package:get/get.dart';
 import 'package:miniawradreborn/home.dart';
 import 'package:miniawradreborn/page/grid_page.dart';
 import 'package:miniawradreborn/page/page.dart';
+
 import 'package:miniawradreborn/page/tabbar_page.dart';
 import 'package:miniawradreborn/rute.dart';
+
+import 'package:miniawradreborn/page/tabbar_yasin.dart';
+
 import 'package:sizer/sizer.dart';
 
 void main() {

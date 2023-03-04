@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:miniawradreborn/bunder.dart';
 import 'package:miniawradreborn/head.dart';
+import 'package:http/http.dart';
 import 'package:miniawradreborn/page/grid_page.dart';
 import 'package:miniawradreborn/page/page.dart';
+import 'package:miniawradreborn/page/tabbar_sabul.dart';
+import 'package:miniawradreborn/page/tabbar_waqiah.dart';
+import 'package:miniawradreborn/page/tabbar_yasin.dart';
 import 'package:sizer/sizer.dart';
 
 class body extends StatefulWidget {
@@ -31,6 +36,7 @@ class _bodyState extends State<body> {
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(55),
                     topRight: Radius.circular(55))),
+
             child: Container(
               margin: EdgeInsets.only(top: 30),
               child: Column(
@@ -109,6 +115,7 @@ class _bodyState extends State<body> {
                         text: "Dalail",
                         // halaman: "Dalailul Khoirat",
                         // pdf: "",
+
                       ),
                     ],
                   ),

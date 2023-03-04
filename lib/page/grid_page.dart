@@ -4,7 +4,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:miniawradreborn/page/appbar_page.dart';
 import 'package:get/get.dart';
 import 'package:miniawradreborn/page/page.dart';
-import 'package:miniawradreborn/page/tabbar_page.dart';
+import 'package:miniawradreborn/page/tabbar_yasin.dart';
 
 class grid_page extends StatefulWidget {
   const grid_page({super.key});
@@ -27,19 +27,34 @@ class _grid_pageState extends State<grid_page> {
               child: Column(
                 children: [
                   input_kitab(
-                      page_kitab_kiri: page(judulpage: 'Badrun Bada', pdfpage: 'coba.pdf'),
-                      cover_kitab_kiri: '1.jpg',
-                      nama_kitab_kiri: 'Badrun Bada',
-                      page_kitab_kanan: page(judulpage: 'Sembarang', pdfpage: 'coba.pdf'),
-                      cover_kitab_kanan: '1.jpg',
-                      nama_kitab_kanan: 'Pokok kitab'),
+                      page_kitab_kiri:
+                          page(judulpage: 'Lamiyah', pdfpage: 'lamiyah.pdf'),
+                      cover_kitab_kiri: 'lamiyah.jpg',
+                      nama_kitab_kiri: 'Lamiyah',
+                      page_kitab_kanan: page(
+                          judulpage: 'Lisanul Fata',
+                          pdfpage: 'lisanul-fata.pdf'),
+                      cover_kitab_kanan: 'lisanul-fata.jpg',
+                      nama_kitab_kanan: 'Lisanul Fata'),
                   input_kitab(
-                      page_kitab_kiri: page(judulpage: 'Badrun Bada', pdfpage: 'coba.pdf'),
-                      cover_kitab_kiri: '1.jpg',
-                      nama_kitab_kiri: 'Badrun Bada',
-                      page_kitab_kanan: page(judulpage: 'pokok', pdfpage: 'coba.pdf'),
-                      cover_kitab_kanan: '1.jpg',
-                      nama_kitab_kanan: 'Pokok kitab')
+                      page_kitab_kiri: page(
+                          judulpage: "Maladzatul 'Aisy",
+                          pdfpage: 'maladzatul.pdf'),
+                      cover_kitab_kiri: 'maladzatul.jpg',
+                      nama_kitab_kiri: "Maladzatul 'Aisy",
+                      page_kitab_kanan: page(
+                          judulpage: 'Sang Purnama', pdfpage: 'purnama.pdf'),
+                      cover_kitab_kanan: 'purnama.jpg',
+                      nama_kitab_kanan: 'Sang Purnama'),
+                  input_kitab(
+                      page_kitab_kiri: page(
+                          judulpage: "'Unwanul Hikam", pdfpage: 'unwanul.pdf'),
+                      cover_kitab_kiri: 'unwanul.jpg',
+                      nama_kitab_kiri: "'Unwanul Hikam",
+                      page_kitab_kanan: page(
+                          judulpage: "'Unwanul Hikam", pdfpage: 'unwanul.pdf'),
+                      cover_kitab_kanan: 'unwanul.jpg',
+                      nama_kitab_kanan: "'Unwanul Hikam")
                 ],
               ),
             )
@@ -114,7 +129,7 @@ class kitab_kanan extends StatelessWidget {
       },
       child: Container(
         width: 100,
-        height: 156,
+        height: 160,
         decoration: BoxDecoration(
             gradient: LinearGradient(
                 begin: Alignment.topLeft,
@@ -185,7 +200,7 @@ class kitab_kiri extends StatelessWidget {
       },
       child: Container(
         width: 100,
-        height: 156,
+        height: 160,
         decoration: BoxDecoration(
             gradient: LinearGradient(
                 begin: Alignment.topLeft,
