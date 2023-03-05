@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:miniawradreborn/home.dart';
+import 'package:miniawradreborn/home/home_screen.dart';
 import 'package:miniawradreborn/page/grid_page.dart';
 import 'package:miniawradreborn/page/page.dart';
 import 'package:miniawradreborn/page/tabbar_yasin.dart';

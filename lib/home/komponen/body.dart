@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:miniawradreborn/bunder.dart';
-import 'package:miniawradreborn/head.dart';
+import 'package:miniawradreborn/home/komponen/bunder.dart';
+import 'package:miniawradreborn/home/komponen/head.dart';
 import 'package:miniawradreborn/page/grid_page.dart';
 import 'package:miniawradreborn/page/page.dart';
 import 'package:miniawradreborn/page/tabbar_sabul.dart';
@@ -46,22 +46,16 @@ class _bodyState extends State<body> {
                       bunder(
                         icon: "tawassul.png",
                         text: "Tawassul",
-                        // halaman: "Tawassul",
-                        // pdf: "tawassul.pdf",
-                        rute: "/page1",
+                        rute: "/tawassul",
                       ),
                       bunder(
                         icon: "birrul.png",
                         text: "Birrul Walidayn",
-                        // halaman: "Birrul Walidayn",
-                        // pdf: "unwanul.pdf",
-                        rute: "/page2",
+                        rute: "/birrul",
                       ),
                       bunder(
                         icon: "yasin.png",
                         text: "Yasin & Tahlil",
-                        // halaman: "Yasin & Tahlil",
-                        // pdf: "Yasin",
                       ),
                     ],
                   ),
@@ -74,20 +68,14 @@ class _bodyState extends State<body> {
                       bunder(
                         icon: "istighosah.png",
                         text: "Istighosah",
-                        // halaman: "Istighosah",
-                        // pdf: "coba.pdf",
                       ),
                       bunder(
                         icon: "waqiah.png",
                         text: "Al-Waqiah",
-                        // halaman: "Waqiah",
-                        // pdf: "maladzatul.pdf"
                       ),
                       bunder(
                         icon: "burdah.png",
                         text: "Burdah",
-                        // halaman: "Burdah",
-                        // pdf: "burdah.pdf",
                       ),
                     ],
                   ),
@@ -100,8 +88,6 @@ class _bodyState extends State<body> {
                       bunder(
                         icon: "diba.png",
                         text: "Diba",
-                        // halaman: "Diba",
-                        // pdf: "lamiyah.pdf",
                       ),
                       bunder(
                         icon: "sabul.png",
@@ -110,8 +96,6 @@ class _bodyState extends State<body> {
                       bunder(
                         icon: "dalail.png",
                         text: "Dalail",
-                        // halaman: "Dalailul Khoirat",
-                        // pdf: "",
                       ),
                     ],
                   ),

@@ -6,24 +6,14 @@ import 'package:miniawradreborn/page/page.dart';
 class bunder extends StatefulWidget {
   final String? text;
   final String? icon;
-  final String? halaman;
-  final String? pdf;
-  final String? semua;
   final String? rute;
 
   bunder({
     this.text,
     this.icon,
-    this.halaman,
-    this.pdf,
-    this.semua,
     this.rute,
     super.key,
   });
-
-  void goToNewScreen() {
-    //FUNGSI NAVIGASINYA AKAN ADA DISINI TAPI AKAN DIBAHAS KEMUDIAN JADI TOLONG DIINGAT
-  }
 
   @override
   State<bunder> createState() => _bunderState();
@@ -36,8 +26,6 @@ class _bunderState extends State<bunder> {
       children: [
         GestureDetector(
           onTap: () {
-            // Get.to(
-            //     page(judulpage: '${widget.halaman}', pdfpage: '${widget.pdf}'));
             Get.toNamed("${widget.rute}");
           },
           child: Container(
@@ -61,7 +49,7 @@ class _bunderState extends State<bunder> {
                 shape: BoxShape.circle),
             child: Image.asset(
               'assets/images/${widget.icon}',
-              scale: 10,
+              scale: 12,
             ),
           ),
         ),
@@ -72,7 +60,7 @@ class _bunderState extends State<bunder> {
             style: TextStyle(
               color: Colors.blue,
               fontFamily: 'Poppins',
-              fontWeight: FontWeight.w400,
+              fontWeight: FontWeight.w500,
               fontSize: 12,
             ))
       ],
