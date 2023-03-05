@@ -4,6 +4,7 @@ import 'package:miniawradreborn/home.dart';
 import 'package:miniawradreborn/page/grid_page.dart';
 import 'package:miniawradreborn/page/page.dart';
 import 'package:miniawradreborn/page/tabbar_yasin.dart';
+import 'package:miniawradreborn/rute.dart';
 import 'package:sizer/sizer.dart';
 
 void main() {
@@ -22,7 +23,20 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(),
         home: const Home(),
         debugShowCheckedModeBanner: false,
+        initialRoute: "/",
+        routes: rute,
       );
     });
   }
+
+//   Map<String, WidgetBuilder> get rute {
+//     return <String, WidgetBuilder>{
+//         "/home": (BuildContext context) => Home(),
+//         "/satu": (BuildContext context) => grid_page(),
+//         "/page1": (BuildContext context) =>
+//             page(judulpage: "Tawassul", pdfpage: "tawassul.pdf"),
+//         "/page2": (BuildContext context) =>
+//             page(judulpage: "Birrul Walidayn", pdfpage: "lamiyah.pdf")
+//       };
+//   }
 }
