@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-
 import 'package:get/get.dart';
-
 import 'package:miniawradreborn/page/appbar_page.dart';
-
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class page extends StatelessWidget {
@@ -29,7 +26,8 @@ class page extends StatelessWidget {
               decoration:
                   BoxDecoration(color: Color.fromARGB(255, 251, 251, 251)),
               width: MediaQuery.of(context).size.width,
-              height: 500,
+              // height: 500,
+              height: MediaQuery.of(context).size.height,
               margin: EdgeInsets.all(20),
               // padding: EdgeInsets.all(20),
               child: Container(
@@ -38,6 +36,7 @@ class page extends StatelessWidget {
                   enableDoubleTapZooming: true,
                   pageSpacing: 0,
                   initialZoomLevel: 0,
+                  pageLayoutMode: PdfPageLayoutMode.continuous,
                 ),
               ),
             )
