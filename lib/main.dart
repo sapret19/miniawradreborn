@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       return GetMaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(),
-        home: const Home(),
+        home: const grid_page(),
         debugShowCheckedModeBanner: false,
         initialRoute: "/",
         routes: rute,
