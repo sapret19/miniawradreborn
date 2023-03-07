@@ -29,7 +29,7 @@ class _grid_pageState extends State<grid_page> {
                   input_kitab(
                       page_kitab_kiri:
                           page(judulpage: 'Lamiyah', pdfpage: 'lamiyah.pdf'),
-                      cover_kitab_kiri: 'lamiyah.jpg',
+                      cover_kitab_kiri: 'lamiyah.png',
                       nama_kitab_kiri: 'Lamiyah',
                       page_kitab_kanan: page(
                           judulpage: 'Lisanul Fata',
@@ -40,7 +40,7 @@ class _grid_pageState extends State<grid_page> {
                       page_kitab_kiri: page(
                           judulpage: "Maladzatul 'Aisy",
                           pdfpage: 'maladzatul.pdf'),
-                      cover_kitab_kiri: 'maladzatul.jpg',
+                      cover_kitab_kiri: 'aishi.png',
                       nama_kitab_kiri: "Maladzatul 'Aisy",
                       page_kitab_kanan: page(
                           judulpage: 'Sang Purnama', pdfpage: 'purnama.pdf'),

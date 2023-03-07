@@ -13,6 +13,7 @@ class page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -23,8 +24,7 @@ class page extends StatelessWidget {
             //   height: 30,
             // ),
             Container(
-              decoration:
-                  BoxDecoration(color: Color.fromARGB(255, 251, 251, 251)),
+              decoration: BoxDecoration(color: Colors.white),
               width: MediaQuery.of(context).size.width,
               // height: 500,
               height: MediaQuery.of(context).size.height,

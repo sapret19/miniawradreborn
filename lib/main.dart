@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import 'package:miniawradreborn/home/home_screen.dart';
 import 'package:miniawradreborn/page/grid_page.dart';
 import 'package:miniawradreborn/page/page.dart';
+import 'package:miniawradreborn/page/tabbar_sabul.dart';
+import 'package:miniawradreborn/page/tabbar_waqiah.dart';
 import 'package:miniawradreborn/page/tabbar_yasin.dart';
 import 'package:miniawradreborn/rute.dart';
 import 'package:sizer/sizer.dart';
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
       return GetMaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(),
-        home: const grid_page(),
+        home: const Tabbar_sabul(),
         debugShowCheckedModeBanner: false,
         initialRoute: "/",
         routes: rute,

@@ -117,6 +117,7 @@ class _Tabbar_pageState extends State<Tabbar_waqiah> {
                     ]),
               ),
               Container(
+                decoration: BoxDecoration(color: Colors.amber),
                 height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
                 child: TabBarView(children: [
@@ -142,6 +143,7 @@ class page_tab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(color: Colors.amber),
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
       child: SfPdfViewer.asset('assets/pdf/${pagetab}'),
