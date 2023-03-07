@@ -14,6 +14,7 @@ class _Tabbar_pageState extends State<Tabbar_sabul> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: DefaultTabController(
         length: 7,
         child: SingleChildScrollView(
@@ -113,26 +114,26 @@ class _Tabbar_pageState extends State<Tabbar_sabul> {
                               color: Color.fromARGB(255, 194, 194, 194))
                         ]),
                     tabs: [
+                      nama_tab(namatab: 'As-Sajdah'),
                       nama_tab(namatab: 'Yasin'),
-                      nama_tab(namatab: 'Tahlil'),
-                      nama_tab(namatab: 'Doa'),
-                      nama_tab(namatab: 'Yasin'),
-                      nama_tab(namatab: 'Tahlil'),
-                      nama_tab(namatab: 'Doa'),
-                      nama_tab(namatab: 'Doa'),
+                      nama_tab(namatab: 'Fushilat'),
+                      nama_tab(namatab: 'Ad-Dukhon'),
+                      nama_tab(namatab: 'Al-Waqiah'),
+                      nama_tab(namatab: 'Al-Hasyr'),
+                      nama_tab(namatab: 'Al-Mulk'),
                     ]),
               ),
               Container(
                 height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
                 child: TabBarView(children: [
-                  page_tab(pagetab: 'coba.pdf'),
-                  page_tab(pagetab: 'coba.pdf'),
-                  page_tab(pagetab: 'coba.pdf'),
-                  page_tab(pagetab: 'coba.pdf'),
-                  page_tab(pagetab: 'coba.pdf'),
-                  page_tab(pagetab: 'coba.pdf'),
-                  page_tab(pagetab: 'coba.pdf'),
+                  page_tab(pagetab: 'Sajdah.pdf'),
+                  page_tab(pagetab: 'Yasintok.pdf'),
+                  page_tab(pagetab: 'Fushilat.pdf'),
+                  page_tab(pagetab: 'Dukhon.pdf'),
+                  page_tab(pagetab: 'Waqiah.pdf'),
+                  page_tab(pagetab: 'Hasyr.pdf'),
+                  page_tab(pagetab: 'Mulk.pdf'),
                 ]),
               )
             ],
