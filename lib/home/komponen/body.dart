@@ -95,6 +95,7 @@ class _bodyState extends State<body> {
                       bunder(
                         icon: "dalail.png",
                         text: "Dalail",
+                        rute: "/dalail",
                       ),
                     ],
                   ),

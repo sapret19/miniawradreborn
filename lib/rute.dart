@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:miniawradreborn/home/home_screen.dart';
 import 'package:miniawradreborn/page/grid_page.dart';
+import 'package:miniawradreborn/page/ini_list.dart';
+import 'package:miniawradreborn/page/list_page.dart';
 import 'package:miniawradreborn/page/page.dart';
+import 'package:miniawradreborn/page/single_list.dart';
 
 Map<String, WidgetBuilder> get rute {
   return <String, WidgetBuilder>{
@@ -22,8 +25,8 @@ Map<String, WidgetBuilder> get rute {
         page(judulpage: "Diba", pdfpage: "tawassul.pdf"),
     "/sabul": (BuildContext context) =>
         page(judulpage: "Sabul Munjiyat", pdfpage: "lamiyah.pdf"),
-    "/dalail": (BuildContext context) =>
-        page(judulpage: "Dalail", pdfpage: "lamiyah.pdf"),
+    "/dalail": (BuildContext context) => list(),
     "/kitab": (BuildContext context) => grid_page(),
+    // "/coba": (BuildContext context) => single_list(),
   };
 }
