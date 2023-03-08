@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:miniawradreborn/page/appbar_page.dart';
 import 'package:miniawradreborn/page/model_list.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
@@ -27,47 +28,71 @@ class _single_listState extends State<single_list> {
     Size size = MediaQuery.of(context).size;
 
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        elevation: 0,
-        leading: IconButton(
-          onPressed: (() => Navigator.pop(context)),
-          icon: Image.asset(
-            'assets/images/back.png',
-            color: Colors.white,
-          ),
-          padding: EdgeInsets.only(left: 20),
-        ),
-        title: Text(
-          widget.Modellist[widget.index].nama,
-          textAlign: TextAlign.start,
-          maxLines: 4,
-          style: TextStyle(
-              fontFamily: 'Poppins', fontWeight: FontWeight.w500, fontSize: 18),
-        ),
-        centerTitle: true,
-      ),
-      body: Container(
-        height: size.height,
-        width: size.width,
-        decoration: const BoxDecoration(color: Colors.blue),
-        child: Container(
-          margin: const EdgeInsets.only(top: 20),
-          padding: const EdgeInsets.all(20),
-          decoration: const BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(20), topRight: Radius.circular(20))),
-          child: Container(
-            child: SfPdfViewer.asset(
-              widget.Modelpdf[widget.index].pdf!,
-              initialZoomLevel: 0,
-              enableDoubleTapZooming: true,
-              pageSpacing: 0,
-            ),
-          ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            AppBar_normalpage(judul: widget.Modellist[widget.index].nama),
+            Container(
+              decoration: BoxDecoration(color: Colors.white),
+              width: MediaQuery.of(context).size.width,
+              // height: 500,
+              height: 600,
+              margin: EdgeInsets.all(20),
+              // padding: EdgeInsets.all(20),
+              child: Container(
+                child: SfPdfViewer.asset(
+                  widget.Modelpdf[widget.index].pdf!,
+                  enableDoubleTapZooming: true,
+                  pageSpacing: 0,
+                  initialZoomLevel: 0,
+                  pageLayoutMode: PdfPageLayoutMode.continuous,
+                ),
+              ),
+            )
+          ],
         ),
       ),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.blue,
+      //   elevation: 0,
+      //   leading: IconButton(
+      //     onPressed: (() => Navigator.pop(context)),
+      //     icon: Image.asset(
+      //       'assets/images/back.png',
+      //       color: Colors.white,
+      //     ),
+      //     padding: EdgeInsets.only(left: 20),
+      //   ),
+      //   title: Text(
+      //     widget.Modellist[widget.index].nama,
+      //     textAlign: TextAlign.start,
+      //     maxLines: 4,
+      //     style: TextStyle(
+      //         fontFamily: 'Poppins', fontWeight: FontWeight.w500, fontSize: 18),
+      //   ),
+      //   centerTitle: true,
+      // ),
+      // body: Container(
+      //   height: size.height,
+      //   width: size.width,
+      //   decoration: const BoxDecoration(color: Colors.blue),
+      //   child: Container(
+      //     margin: const EdgeInsets.only(top: 20),
+      //     padding: const EdgeInsets.all(20),
+      //     decoration: const BoxDecoration(
+      //         color: Colors.white,
+      //         borderRadius: BorderRadius.only(
+      //             topLeft: Radius.circular(20), topRight: Radius.circular(20))),
+      //     child: Container(
+      //       child: SfPdfViewer.asset(
+      //         widget.Modelpdf[widget.index].pdf!,
+      //         initialZoomLevel: 0,
+      //         enableDoubleTapZooming: true,
+      //         pageSpacing: 0,
+      //       ),
+      //     ),
+      //   ),
+      // ),
     );
   }
 }
