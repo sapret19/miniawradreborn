@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(builder: (context, orientation, deviceType) {
       return GetMaterialApp(
-        title: 'Flutter Demo',
+        title: 'Mini Awrad Santri',
         theme: ThemeData(),
         home: Home(),
         debugShowCheckedModeBanner: false,

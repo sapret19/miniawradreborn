@@ -19,7 +19,7 @@ Map<String, WidgetBuilder> get rute {
         page(judulpage: "Birrul Walidayn", pdfpage: "lamiyah.pdf"),
     "/yasintahlil": (BuildContext context) => Tabbar_yasin(),
     "/istighosah": (BuildContext context) =>
-        page(judulpage: "Istighosah", pdfpage: "tawassul.pdf"),
+        page(judulpage: "Istighosah", pdfpage: "istighosah.pdf"),
     "/waqiah": (BuildContext context) => Tabbar_waqiah(),
     "/burdah": (BuildContext context) =>
         page(judulpage: "Burdah", pdfpage: "tawassul.pdf"),
