@@ -130,7 +130,7 @@ class _Tabbar_pageState extends State<Tabbar_sabul> {
                     physics: NeverScrollableScrollPhysics(),
                     children: [
                       page_tab(pagetab: 'Sajdah.pdf'),
-                      page_tab(pagetab: 'Yasintok.pdf'),
+                      page_tab(pagetab: 'Yasin.pdf'),
                       page_tab(pagetab: 'Fushilat.pdf'),
                       page_tab(pagetab: 'Dukhon.pdf'),
                       page_tab(pagetab: 'Waqiah.pdf'),

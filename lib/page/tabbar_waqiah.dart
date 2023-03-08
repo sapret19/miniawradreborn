@@ -125,7 +125,7 @@ class _Tabbar_pageState extends State<Tabbar_waqiah> {
                     physics: NeverScrollableScrollPhysics(),
                     children: [
                       page_tab(pagetab: 'Waqiah.pdf'),
-                      page_tab(pagetab: 'coba.pdf'),
+                      page_tab(pagetab: 'doa_waqiah.pdf'),
                     ]),
               )
             ],
