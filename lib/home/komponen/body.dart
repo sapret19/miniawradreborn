@@ -90,7 +90,7 @@ class _bodyState extends State<body> {
                     children: [
                       bunder(
                         icon: "diba.png",
-                        text: "Diba",
+                        text: "Maulid Diba",
                         rute: "/diba",
                       ),
                       bunder(

@@ -4,6 +4,7 @@ import 'package:miniawradreborn/page/grid_page.dart';
 import 'package:miniawradreborn/page/ini_list.dart';
 import 'package:miniawradreborn/page/list_page.dart';
 import 'package:miniawradreborn/page/page.dart';
+import 'package:miniawradreborn/page/tabbar_diba.dart';
 import 'package:miniawradreborn/page/tabbar_sabul.dart';
 import 'package:miniawradreborn/page/tabbar_waqiah.dart';
 import 'package:miniawradreborn/page/tabbar_yasin.dart';
@@ -23,7 +24,7 @@ Map<String, WidgetBuilder> get rute {
     "/waqiah": (BuildContext context) => Tabbar_waqiah(),
     "/burdah": (BuildContext context) =>
         page(judulpage: "Burdah", pdfpage: "tawassul.pdf"),
-    "/diba": (BuildContext context) => Tabbar_waqiah(),
+    "/diba": (BuildContext context) => Tabbar_diba(),
     "/sabul": (BuildContext context) => Tabbar_sabul(),
     "/dalail": (BuildContext context) => list(),
   };
