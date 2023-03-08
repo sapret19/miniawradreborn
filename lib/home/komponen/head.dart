@@ -24,7 +24,7 @@ class head extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            height: 20,
+            height: 40,
           ),
           Container(
             height: 97,

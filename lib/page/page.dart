@@ -27,7 +27,7 @@ class page extends StatelessWidget {
               decoration: BoxDecoration(color: Colors.white),
               width: MediaQuery.of(context).size.width,
               // height: 500,
-              height: MediaQuery.of(context).size.height,
+              height: 600,
               margin: EdgeInsets.all(20),
               // padding: EdgeInsets.all(20),
               child: Container(

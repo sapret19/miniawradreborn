@@ -56,6 +56,7 @@ class _bodyState extends State<body> {
                       bunder(
                         icon: "yasin.png",
                         text: "Yasin & Tahlil",
+                        rute: "/yasintahlil",
                       ),
                     ],
                   ),
@@ -68,14 +69,17 @@ class _bodyState extends State<body> {
                       bunder(
                         icon: "istighosah.png",
                         text: "Istighosah",
+                        rute: "/istighosah",
                       ),
                       bunder(
                         icon: "waqiah.png",
                         text: "Al-Waqiah",
+                        rute: "/waqiah",
                       ),
                       bunder(
                         icon: "burdah.png",
                         text: "Burdah",
+                        rute: "/burdah",
                       ),
                     ],
                   ),
@@ -88,14 +92,17 @@ class _bodyState extends State<body> {
                       bunder(
                         icon: "diba.png",
                         text: "Diba",
+                        rute: "/diba",
                       ),
                       bunder(
                         icon: "sabul.png",
                         text: "Sabul Munjiyat",
+                        rute: "/sabul",
                       ),
                       bunder(
                         icon: "dalail.png",
                         text: "Dalail",
+                        rute: "/dalail",
                       ),
                     ],
                   ),
@@ -105,6 +112,7 @@ class _bodyState extends State<body> {
                   bunder(
                     icon: "kitab.png",
                     text: "Kitab-kitab",
+                    rute: "/kitab",
                   ),
                 ],
               ),

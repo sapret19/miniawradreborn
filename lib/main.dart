@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       return GetMaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(),
-        home: const Tabbar_sabul(),
+        home: const Home(),
         debugShowCheckedModeBanner: false,
         initialRoute: "/",
         routes: rute,

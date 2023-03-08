@@ -54,7 +54,10 @@ class _grid_pageState extends State<grid_page> {
                       page_kitab_kanan: page(
                           judulpage: "Hijrah Nabawi", pdfpage: 'nabawiyah.pdf'),
                       cover_kitab_kanan: 'nabawiyah.png',
-                      nama_kitab_kanan: "'Hijrah Nabawi")
+                      nama_kitab_kanan: "'Hijrah Nabawi"),
+                  SizedBox(
+                    height: 40,
+                  )
                 ],
               ),
             )

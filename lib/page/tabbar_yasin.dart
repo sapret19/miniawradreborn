@@ -14,6 +14,7 @@ class _Tabbar_pageState extends State<Tabbar_yasin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: DefaultTabController(
         length: 3,
         child: SingleChildScrollView(
@@ -118,13 +119,15 @@ class _Tabbar_pageState extends State<Tabbar_yasin> {
                     ]),
               ),
               Container(
-                height: MediaQuery.of(context).size.height,
+                height: 600,
                 width: MediaQuery.of(context).size.width,
-                child: TabBarView(children: [
-                  page_tab(pagetab: 'coba.pdf'),
-                  page_tab(pagetab: 'coba.pdf'),
-                  page_tab(pagetab: 'coba.pdf'),
-                ]),
+                child: TabBarView(
+                    physics: NeverScrollableScrollPhysics(),
+                    children: [
+                      page_tab(pagetab: 'coba.pdf'),
+                      page_tab(pagetab: 'coba.pdf'),
+                      page_tab(pagetab: 'coba.pdf'),
+                    ]),
               )
             ],
           ),

@@ -90,7 +90,7 @@ class _Tabbar_pageState extends State<Tabbar_sabul> {
               ),
               Container(
                 height: 40,
-                width: MediaQuery.of(context).size.width / 1.5,
+                width: MediaQuery.of(context).size.width / 1.2,
                 transform: Matrix4.translationValues(0, -20, 2),
                 decoration: BoxDecoration(
                     color: Color.fromARGB(255, 227, 227, 227),
@@ -124,17 +124,19 @@ class _Tabbar_pageState extends State<Tabbar_sabul> {
                     ]),
               ),
               Container(
-                height: MediaQuery.of(context).size.height,
+                height: 600,
                 width: MediaQuery.of(context).size.width,
-                child: TabBarView(children: [
-                  page_tab(pagetab: 'Sajdah.pdf'),
-                  page_tab(pagetab: 'Yasintok.pdf'),
-                  page_tab(pagetab: 'Fushilat.pdf'),
-                  page_tab(pagetab: 'Dukhon.pdf'),
-                  page_tab(pagetab: 'Waqiah.pdf'),
-                  page_tab(pagetab: 'Hasyr.pdf'),
-                  page_tab(pagetab: 'Mulk.pdf'),
-                ]),
+                child: TabBarView(
+                    physics: NeverScrollableScrollPhysics(),
+                    children: [
+                      page_tab(pagetab: 'Sajdah.pdf'),
+                      page_tab(pagetab: 'Yasintok.pdf'),
+                      page_tab(pagetab: 'Fushilat.pdf'),
+                      page_tab(pagetab: 'Dukhon.pdf'),
+                      page_tab(pagetab: 'Waqiah.pdf'),
+                      page_tab(pagetab: 'Hasyr.pdf'),
+                      page_tab(pagetab: 'Mulk.pdf'),
+                    ]),
               )
             ],
           ),
@@ -175,7 +177,7 @@ class nama_tab extends StatelessWidget {
         '${namatab}',
         style: TextStyle(
             fontFamily: 'Poppins',
-            fontSize: 14,
+            fontSize: 12,
             fontWeight: FontWeight.w600,
             color: Color.fromARGB(255, 28, 80, 130)),
       ),
