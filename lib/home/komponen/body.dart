@@ -37,7 +37,6 @@ class _bodyState extends State<body> {
             child: Container(
               margin: EdgeInsets.only(top: 30),
               child: Column(
-                // crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Row(
@@ -111,7 +110,7 @@ class _bodyState extends State<body> {
                   ),
                   bunder(
                     icon: "kitab.png",
-                    text: "Kitab-kitab",
+                    text: "Kitab Syair",
                     rute: "/kitab",
                   ),
                 ],

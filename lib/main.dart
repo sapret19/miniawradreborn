@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:miniawradreborn/home/home_screen.dart';
 import 'package:miniawradreborn/page/grid_page.dart';
+import 'package:miniawradreborn/page/list_page.dart';
 import 'package:miniawradreborn/page/page.dart';
 import 'package:miniawradreborn/page/tabbar_sabul.dart';
 import 'package:miniawradreborn/page/tabbar_waqiah.dart';
@@ -23,22 +24,11 @@ class MyApp extends StatelessWidget {
       return GetMaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(),
-        home: const Home(),
+        home: Home(),
         debugShowCheckedModeBanner: false,
         initialRoute: "/",
         routes: rute,
       );
     });
   }
-
-//   Map<String, WidgetBuilder> get rute {
-//     return <String, WidgetBuilder>{
-//         "/home": (BuildContext context) => Home(),
-//         "/satu": (BuildContext context) => grid_page(),
-//         "/page1": (BuildContext context) =>
-//             page(judulpage: "Tawassul", pdfpage: "tawassul.pdf"),
-//         "/page2": (BuildContext context) =>
-//             page(judulpage: "Birrul Walidayn", pdfpage: "lamiyah.pdf")
-//       };
-//   }
 }
