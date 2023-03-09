@@ -9,7 +9,7 @@ class head extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 24.h,
+      height: 30.h,
       width: 100.h,
       decoration: BoxDecoration(
         color: Color.fromARGB(255, 84, 181, 246),
