@@ -4,6 +4,7 @@ import 'package:miniawradreborn/home/home_screen.dart';
 import 'package:miniawradreborn/page/grid_page.dart';
 import 'package:miniawradreborn/page/list_page.dart';
 import 'package:miniawradreborn/page/page.dart';
+import 'package:miniawradreborn/page/tabbar_diba.dart';
 import 'package:miniawradreborn/page/tabbar_sabul.dart';
 import 'package:miniawradreborn/page/tabbar_waqiah.dart';
 import 'package:miniawradreborn/page/tabbar_yasin.dart';

@@ -3,20 +3,20 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
-class Tabbar_sabul extends StatefulWidget {
-  const Tabbar_sabul({super.key});
+class Tabbar_diba extends StatefulWidget {
+  const Tabbar_diba({super.key});
 
   @override
-  State<Tabbar_sabul> createState() => _Tabbar_pageState();
+  State<Tabbar_diba> createState() => _Tabbar_pageState();
 }
 
-class _Tabbar_pageState extends State<Tabbar_sabul> {
+class _Tabbar_pageState extends State<Tabbar_diba> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       body: DefaultTabController(
-        length: 7,
+        length: 27,
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -77,7 +77,7 @@ class _Tabbar_pageState extends State<Tabbar_sabul> {
                     Container(
                       margin: EdgeInsets.only(left: 17),
                       child: Text(
-                        "Sab'ul Munjiyat",
+                        "Maulid Diba",
                         style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 18,
@@ -114,13 +114,33 @@ class _Tabbar_pageState extends State<Tabbar_sabul> {
                               color: Color.fromARGB(255, 194, 194, 194))
                         ]),
                     tabs: [
-                      nama_tab(namatab: 'As-Sajdah'),
-                      nama_tab(namatab: 'Yasin'),
-                      nama_tab(namatab: 'Fushilat'),
-                      nama_tab(namatab: 'Ad-Dukhon'),
-                      nama_tab(namatab: 'Al-Waqiah'),
-                      nama_tab(namatab: 'Al-Hasyr'),
-                      nama_tab(namatab: 'Al-Mulk'),
+                      nama_tab(namatab: "Ya Rabbi shalli..."),
+                      nama_tab(namatab: 'Laqod jaakum...'),
+                      nama_tab(namatab: 'Ya Rasulallah...'),
+                      nama_tab(namatab: 'Al-hamdulillahil qawiyy...'),
+                      nama_tab(namatab: "Qila huwa adam..."),
+                      nama_tab(namatab: "Yub'atsu min tihamah..."),
+                      nama_tab(namatab: 'Tsumma ardudduhu...'),
+                      nama_tab(namatab: 'Shalatullahi ma lahat...'),
+                      nama_tab(namatab: "Fasubhanaman khashshahu..."),
+                      nama_tab(namatab: 'Awwalu ma nastaftihu...'),
+                      nama_tab(namatab: 'Al-haditsul awwal...'),
+                      nama_tab(namatab: 'Al-haditsul tsani...'),
+                      nama_tab(namatab: "Fayaqulul haqqu..."),
+                      nama_tab(namatab: 'Ahdliru qulubakum...'),
+                      nama_tab(namatab: 'Fahtazzal arsyu...'),
+                      nama_tab(namatab: 'Mahallul Qiyam...'),
+                      nama_tab(namatab: "Wawulida shallallahu..."),
+                      nama_tab(namatab: 'Qila man yakfulu...'),
+                      nama_tab(namatab: "Tsumma a'radla..."),
+                      nama_tab(namatab: "Fabainama huwa dzata..."),
+                      nama_tab(namatab: 'Faqolatil malaikatu...'),
+                      nama_tab(namatab: "Fabainama habibu..."),
+                      nama_tab(namatab: "Falamma ra'athu..."),
+                      nama_tab(namatab: 'Wa kana shallallahu...'),
+                      nama_tab(namatab: "Wa qila liba'dhihim..."),
+                      nama_tab(namatab: "Wa ma 'asa an yuqala..."),
+                      nama_tab(namatab: "Ya badratim..."),
                     ]),
               ),
               Container(
@@ -130,12 +150,32 @@ class _Tabbar_pageState extends State<Tabbar_sabul> {
                     physics: NeverScrollableScrollPhysics(),
                     children: [
                       page_tab(pagetab: 'Sajdah.pdf'),
-                      page_tab(pagetab: 'Yasin.pdf'),
+                      page_tab(pagetab: 'Yasintok.pdf'),
                       page_tab(pagetab: 'Fushilat.pdf'),
                       page_tab(pagetab: 'Dukhon.pdf'),
                       page_tab(pagetab: 'Waqiah.pdf'),
                       page_tab(pagetab: 'Hasyr.pdf'),
                       page_tab(pagetab: 'Mulk.pdf'),
+                      page_tab(pagetab: 'Sajdah.pdf'),
+                      page_tab(pagetab: 'Yasintok.pdf'),
+                      page_tab(pagetab: 'Fushilat.pdf'),
+                      page_tab(pagetab: 'Dukhon.pdf'),
+                      page_tab(pagetab: 'Waqiah.pdf'),
+                      page_tab(pagetab: 'Hasyr.pdf'),
+                      page_tab(pagetab: 'Mulk.pdf'),
+                      page_tab(pagetab: 'Sajdah.pdf'),
+                      page_tab(pagetab: 'Yasintok.pdf'),
+                      page_tab(pagetab: 'Fushilat.pdf'),
+                      page_tab(pagetab: 'Dukhon.pdf'),
+                      page_tab(pagetab: 'Waqiah.pdf'),
+                      page_tab(pagetab: 'Hasyr.pdf'),
+                      page_tab(pagetab: 'Mulk.pdf'),
+                      page_tab(pagetab: 'Sajdah.pdf'),
+                      page_tab(pagetab: 'Yasintok.pdf'),
+                      page_tab(pagetab: 'Fushilat.pdf'),
+                      page_tab(pagetab: 'Dukhon.pdf'),
+                      page_tab(pagetab: 'Waqiah.pdf'),
+                      page_tab(pagetab: 'Hasyr.pdf'),
                     ]),
               )
             ],

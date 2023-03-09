@@ -124,9 +124,9 @@ class _Tabbar_pageState extends State<Tabbar_yasin> {
                 child: TabBarView(
                     physics: NeverScrollableScrollPhysics(),
                     children: [
-                      page_tab(pagetab: 'coba.pdf'),
-                      page_tab(pagetab: 'coba.pdf'),
-                      page_tab(pagetab: 'coba.pdf'),
+                      page_tab(pagetab: 'Yasin.pdf'),
+                      page_tab(pagetab: 'tahlil.pdf'),
+                      page_tab(pagetab: 'doa_tahlil.pdf'),
                     ]),
               )
             ],
