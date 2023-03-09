@@ -29,32 +29,35 @@ class _grid_pageState extends State<grid_page> {
                   input_kitab(
                       page_kitab_kiri:
                           page(judulpage: 'Lamiyah', pdfpage: 'lamiyah.pdf'),
-                      cover_kitab_kiri: 'lamiyah.jpg',
+                      cover_kitab_kiri: 'lamiyah.png',
                       nama_kitab_kiri: 'Lamiyah',
                       page_kitab_kanan: page(
                           judulpage: 'Lisanul Fata',
                           pdfpage: 'lisanul-fata.pdf'),
-                      cover_kitab_kanan: 'lisanul-fata.jpg',
+                      cover_kitab_kanan: "lisan11.png",
                       nama_kitab_kanan: 'Lisanul Fata'),
                   input_kitab(
                       page_kitab_kiri: page(
                           judulpage: "Maladzatul 'Aisy",
                           pdfpage: 'maladzatul.pdf'),
-                      cover_kitab_kiri: 'maladzatul.jpg',
+                      cover_kitab_kiri: 'aishi.png',
                       nama_kitab_kiri: "Maladzatul 'Aisy",
                       page_kitab_kanan: page(
                           judulpage: 'Sang Purnama', pdfpage: 'purnama.pdf'),
-                      cover_kitab_kanan: 'purnama.jpg',
+                      cover_kitab_kanan: 'purnama.png',
                       nama_kitab_kanan: 'Sang Purnama'),
                   input_kitab(
                       page_kitab_kiri: page(
                           judulpage: "'Unwanul Hikam", pdfpage: 'unwanul.pdf'),
-                      cover_kitab_kiri: 'unwanul.jpg',
+                      cover_kitab_kiri: 'unwan.png',
                       nama_kitab_kiri: "'Unwanul Hikam",
                       page_kitab_kanan: page(
-                          judulpage: "'Unwanul Hikam", pdfpage: 'unwanul.pdf'),
-                      cover_kitab_kanan: 'unwanul.jpg',
-                      nama_kitab_kanan: "'Unwanul Hikam")
+                          judulpage: "Hijrah Nabawi", pdfpage: 'nabawiyah.pdf'),
+                      cover_kitab_kanan: 'nabawiyah.png',
+                      nama_kitab_kanan: "'Hijrah Nabawi"),
+                  SizedBox(
+                    height: 40,
+                  )
                 ],
               ),
             )

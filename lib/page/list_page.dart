@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
+import 'package:miniawradreborn/page/appbar_page.dart';
 import 'package:miniawradreborn/page/model_list.dart';
 import 'package:miniawradreborn/page/single_list.dart';
 
@@ -16,65 +17,75 @@ class list extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      appBar: AppBar(
-        title: Text('DALAILUL KHOLIROT'),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            AppBar_normalpage(judul: 'Dalailul Khoirot'),
+            Container(
+              margin: EdgeInsets.all(20),
+              child: SizedBox(
+                height: 500,
+                child: ListView.separated(
+                    itemBuilder: ((context, index) {
+                      return ListTile(
+                        leading: Text(
+                          "${index + 1}",
+                          style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w500,
+                              fontSize: 16,
+                              color: Colors.blue),
+                        ),
+                        title: Text(
+                          Modellist[index].nama,
+                          style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w500,
+                              fontSize: 16,
+                              color: Colors.blue),
+                        ),
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => single_list(
+                                  Modellist: Modellist,
+                                  index: index,
+                                  Modelpdf: Modelpdf)));
+                        },
+                      );
+                    }),
+                    separatorBuilder: ((context, index) {
+                      return Container(
+                        height: 1,
+                        margin: EdgeInsets.only(left: 20, right: 20),
+                        color: Colors.blue,
+                      );
+                    }),
+                    itemCount: nama.length),
+              ),
+            ),
+          ],
+        ),
       ),
-      body: ListView.separated(
-          itemBuilder: ((context, index) {
-            return ListTile(
-              leading: Text(
-                "${index + 1}",
-                style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w500,
-                    fontSize: 16,
-                    color: Colors.blue),
-              ),
-              title: Text(
-                Modellist[index].nama,
-                style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w500,
-                    fontSize: 16,
-                    color: Colors.blue),
-              ),
-              onTap: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => single_list(
-                        Modellist: Modellist,
-                        index: index,
-                        Modelpdf: Modelpdf)));
-              },
-            );
-          }),
-          separatorBuilder: ((context, index) {
-            return Container(
-              height: 1,
-              margin: EdgeInsets.only(left: 20, right: 20),
-              color: Colors.blue,
-            );
-          }),
-          itemCount: nama.length),
     );
   }
 }
 
 List<String> nama = [
-  "dalail ahad",
-  "dalail Senin",
-  "dalail Selasa",
-  "dalail Rabu",
-  "dalail Kamis",
-  "dalail jumat",
-  "dalail Sabtu",
+  "Dalail Ahad",
+  "Dalail Senin",
+  "Dalail Selasa",
+  "Dalail Rabu",
+  "Dalail Kamis",
+  "Dalail Jum'at",
+  "Dalail Sabtu",
 ];
 
 List<String> pdf = [
-  "assets/pdf/1.pdf",
-  "assets/pdf/2.pdf",
-  "assets/pdf/3.pdf",
-  "assets/pdf/4.pdf",
-  "assets/pdf/5.pdf",
-  "assets/pdf/6.pdf",
-  "assets/pdf/7.pdf",
+  "assets/pdf/dalail_ahad.pdf",
+  "assets/pdf/dalail_senin.pdf",
+  "assets/pdf/dalail_selasa.pdf",
+  "assets/pdf/dalail_rabu.pdf",
+  "assets/pdf/dalail_kamis.pdf",
+  "assets/pdf/dalail_jumat.pdf",
+  "assets/pdf/dalail_sabtu.pdf",
 ];
