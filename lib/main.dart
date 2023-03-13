@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       return GetMaterialApp(
         title: 'Mini Awrad Santri',
         theme: ThemeData(),
-        home: Pdf(),
+        home: Home(),
         debugShowCheckedModeBanner: false,
         initialRoute: "/",
         routes: rute,
