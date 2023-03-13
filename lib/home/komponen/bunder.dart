@@ -34,10 +34,10 @@ class _bunderState extends State<bunder> {
             decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.blue.withOpacity(0.5),
+                      color: Color.fromARGB(255, 39, 110, 176).withOpacity(0.5),
                       spreadRadius: 1,
-                      blurRadius: 30,
-                      offset: Offset(0, 0))
+                      blurRadius: 19,
+                      offset: Offset(0, 2))
                 ],
                 gradient: LinearGradient(
                     begin: Alignment.topLeft,
